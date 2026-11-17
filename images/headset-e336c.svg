@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Havit E336C">
+  <defs>
+    <linearGradient id="bg-headset-e336c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-headset-e336c" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-headset-e336c)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-headset-e336c)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <path d="M130 170 C130 220, 195 235, 195 270 L195 285" stroke="#64748b" stroke-width="4" fill="none"/>
+            <path d="M270 170 C270 220, 205 235, 205 270" stroke="#64748b" stroke-width="4" fill="none"/>
+            <ellipse cx="130" cy="140" rx="22" ry="26" fill="#0f766e"/>
+            <ellipse cx="270" cy="140" rx="22" ry="26" fill="#0f766e"/>
+            <circle cx="130" cy="140" r="12" fill="#14b8a6"/>
+            <circle cx="270" cy="140" r="12" fill="#14b8a6"/>
+            <rect x="192" y="280" width="16" height="18" rx="4" fill="#334155"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Havit E336C</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Type-C Wired In-Ear Headset</text>
+</svg>

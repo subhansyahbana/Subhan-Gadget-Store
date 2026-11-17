@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="NANVAN OTG Adapter">
+  <defs>
+    <linearGradient id="bg-adapter-otg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-adapter-otg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-adapter-otg)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-adapter-otg)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="160" y="110" width="80" height="75" rx="12" fill="#1e1b4b" stroke="#7c3aed" stroke-width="4"/>
+            <rect x="188" y="80" width="24" height="30" rx="5" fill="#94a3b8"/>
+            <rect x="175" y="150" width="50" height="18" rx="4" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+            <text x="200" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#a78bfa" text-anchor="middle">OTG</text>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">NANVAN OTG Adapter</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">USB-A to Type-C Converter</text>
+</svg>

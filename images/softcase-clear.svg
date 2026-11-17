@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Softcase Bening TPU">
+  <defs>
+    <linearGradient id="bg-softcase-clear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-softcase-clear" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-softcase-clear)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-softcase-clear)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="145" y="65" width="110" height="175" rx="22" fill="#f0f9ff" stroke="#38bdf8" stroke-width="4" fill-opacity="0.6"/>
+            <rect x="160" y="80" width="35" height="55" rx="12" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+            <circle cx="177" cy="95" r="7" fill="#0369a1"/>
+            <circle cx="177" cy="118" r="7" fill="#0369a1"/>
+            <line x1="165" y1="220" x2="235" y2="220" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Softcase Bening TPU</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Anti-Yellowing Transparent Case</text>
+</svg>

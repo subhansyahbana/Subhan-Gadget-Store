@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toko online aksesori handphone dan gadget Subhan Gadget Store. Temukan headset, casing, charger, pelindung layar, powerbank, dan aksesori HP pilihan.">
+  <title>Subhan Gadget Store - Aksesori Handphone &amp; Gadget Pilihan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Tautan Lewati ke Konten Utama untuk Pengguna Keyboard & Pembaca Layar -->
+  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- Header Halaman -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+      <div class="brand-group">
+        <a href="#main-content" class="brand-logo" aria-label="Beranda Subhan Gadget Store">
+          <span class="brand-icon" aria-hidden="true">📱</span>
+          <span class="brand-name">Subhan Gadget Store</span>
+        </a>
+        <p class="brand-tagline">Toko Aksesori Handphone &amp; Gadget Terpercaya</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#katalog" class="nav-link">Katalog</a></li>
+          <li><a href="#asisten-toko" class="nav-link">Asisten Toko</a></li>
+          <li><a href="#kontak-toko" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <button type="button" id="header-wa-btn" class="btn btn-whatsapp-compact" aria-label="Hubungi Subhan Gadget Store via WhatsApp">
+          <span class="wa-icon" aria-hidden="true">💬</span>
+          <span>Chat WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main id="main-content" tabindex="-1">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-hidden="true">Pilihan Hemat &amp; Terlengkap</div>
+          <h1 id="hero-title" class="hero-title">Lengkapi Gadget-mu di Subhan Gadget Store</h1>
+          <p class="hero-description">
+            Temukan headset, casing, charger, pelindung layar, dan aksesori HP pilihan dengan harga yang bersahabat.
+          </p>
+          <div class="hero-actions">
+            <a href="#katalog" class="btn btn-primary btn-large">
+              <span>Jelajahi Produk</span>
+              <span aria-hidden="true"> ↓</span>
+            </a>
+            <a href="#asisten-toko" class="btn btn-outline btn-large">
+              <span>Tanya Asisten Toko</span>
+              <span aria-hidden="true"> 🤖</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-banner-visual" aria-hidden="true">
+          <div class="gadget-card-mockup">
+            <div class="mockup-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mockup-body">
+              <p class="mockup-title">Koleksi Aksesori Terpopuler</p>
+              <ul class="mockup-tags">
+                <li>🎧 Headset &amp; TWS</li>
+                <li>🛡️ Tempered Glass &amp; Case</li>
+                <li>⚡ GaN Charger &amp; Kabel 100W</li>
+                <li>🔋 Powerbank 10.000mAh</li>
+              </ul>
+              <div class="mockup-badge">Pesan Praktis via WhatsApp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Pencarian dan Filter -->
+    <section id="pencarian-filter" class="search-filter-section" aria-labelledby="search-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="search-heading" class="section-title">Cari dan Filter Produk</h2>
+          <p class="section-subtitle">Temukan produk berdasarkan nama, kategori, deskripsi, atau kecocokan perangkat.</p>
+        </div>
+
+        <form id="filter-form" class="filter-form" role="search" aria-label="Pencarian dan Filter Produk" onsubmit="return false;">
+          <div class="filter-grid">
+            <!-- Input Pencarian -->
+            <div class="form-group search-group">
+              <label for="search-input" class="form-label">
+                <span class="label-text">Pencarian Produk</span>
+              </label>
+              <div class="input-wrapper">
+                <input 
+                  type="search" 
+                  id="search-input" 
+                  name="search"
+                  class="form-input" 
+                  placeholder="Ketik nama, merek, tipe konektor, misal: USB-C, MagSafe..." 
+                  autocomplete="off"
+                  aria-describedby="search-hint">
+                <button type="button" id="clear-search-btn" class="input-clear-btn" aria-label="Hapus teks pencarian" hidden>&times;</button>
+              </div>
+              <small id="search-hint" class="form-hint">Mencakup nama produk, deskripsi, kategori, dan kompatibilitas.</small>
+            </div>
+
+            <!-- Filter Kategori -->
+            <div class="form-group category-group">
+              <label for="category-filter" class="form-label">
+                <span class="label-text">Pilih Kategori</span>
+              </label>
+              <select id="category-filter" name="category" class="form-select">
+                <option value="all">Semua Kategori (20 Produk)</option>
+                <!-- Opsi kategori akan dirender oleh JavaScript -->
+              </select>
+            </div>
+
+            <!-- Pengurutan Harga -->
+            <div class="form-group sort-group">
+              <label for="sort-select" class="form-label">
+                <span class="label-text">Urutkan Harga</span>
+              </label>
+              <select id="sort-select" name="sort" class="form-select">
+                <option value="default">Urutan Standar (Katalog)</option>
+                <option value="price-asc">Harga: Termurah ke Termahal</option>
+                <option value="price-desc">Harga: Termahal ke Termurah</option>
+              </select>
+            </div>
+
+            <!-- Tombol Reset -->
+            <div class="form-group reset-group">
+              <span class="form-label-spacer" aria-hidden="true">&nbsp;</span>
+              <button type="button" id="reset-filter-btn" class="btn btn-secondary btn-full">
+                <span>Reset Filter</span>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Informasi Jumlah Produk (Live Region untuk Aksesibilitas Pembaca Layar) -->
+        <div class="status-bar">
+          <div id="catalog-status" class="catalog-status" role="status" aria-live="polite">
+            Menampilkan 20 dari 20 produk
+          </div>
+          <div id="active-filter-tags" class="active-filter-tags" aria-label="Filter aktif"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Katalog Produk -->
+    <section id="katalog" class="catalog-section" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="catalog-heading" class="section-title">Katalog Produk Pilihan</h2>
+          <p class="section-subtitle">Daftar aksesori berkualitas dengan harga transparan dan spesifikasi lengkap.</p>
+        </div>
+
+        <!-- Grid Produk -->
+        <div id="product-grid" class="product-grid" role="region" aria-label="Daftar Kartu Produk">
+          <!-- Kartu produk akan dirender secara dinamis oleh script.js -->
+        </div>
+
+        <!-- Kondisi Ketika Tidak Ada Produk Ditemukan -->
+        <div id="empty-state" class="empty-state" hidden aria-live="polite">
+          <div class="empty-state-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-state-title">Tidak Ada Produk yang Cocok</h3>
+          <p class="empty-state-text">
+            Pencarian atau filter yang Anda terapkan tidak menghasilkan produk apa pun. Silakan periksa kembali ejaan kata kunci atau ubah pilihan kategori.
+          </p>
+          <button type="button" id="empty-reset-btn" class="btn btn-primary">
+            Tampilkan Semua Produk
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Assistant Sederhana: Asisten Toko -->
+    <section id="asisten-toko" class="assistant-section" aria-labelledby="assistant-heading">
+      <div class="container">
+        <div class="assistant-card">
+          <div class="assistant-header">
+            <div class="assistant-badge" aria-hidden="true">Bantuan Cepat</div>
+            <h2 id="assistant-heading" class="assistant-title">Asisten Toko (Pencari Cerdas)</h2>
+            <p class="assistant-subtitle">
+              Punya pertanyaan seputar produk, harga, atau kecocokan HP? Asisten Toko berbasis aturan ini akan membantu mencari informasi yang jujur dan akurat dari katalog kami.
+            </p>
+            <div class="assistant-notice" role="note">
+              <small><strong>Catatan:</strong> Asisten ini siap membantu mencari produk sesuai stok katalog kami.</small>
+            </div>
+          </div>
+
+          <!-- Contoh Pertanyaan Cepat (Pill Chips) -->
+          <div class="suggested-questions" aria-labelledby="suggested-title">
+            <p id="suggested-title" class="suggested-title">Pilih contoh pertanyaan cepat:</p>
+            <div class="chips-group" role="group" aria-label="Contoh pertanyaan">
+              <button type="button" class="question-chip" data-question="Ada headset USB-C?">
+                🎧 Ada headset USB-C?
+              </button>
+              <button type="button" class="question-chip" data-question="Casing apa yang paling murah?">
+                🛡️ Casing apa yang paling murah?
+              </button>
+              <button type="button" class="question-chip" data-question="Berapa harga powerbank?">
+                🔋 Berapa harga powerbank?
+              </button>
+              <button type="button" class="question-chip" data-question="Tampilkan aksesori di bawah Rp50.000.">
+                💰 Aksesori di bawah Rp50.000
+              </button>
+              <button type="button" class="question-chip" data-question="Ada tempered glass?">
+                📱 Ada tempered glass?
+              </button>
+              <button type="button" class="question-chip" data-question="Produk apa saja yang cocok untuk pengisian daya?">
+                ⚡ Produk untuk pengisian daya
+              </button>
+            </div>
+          </div>
+
+          <!-- Formulir Interaksi Asisten -->
+          <form id="assistant-form" class="assistant-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="assistant-input" class="form-label">
+                <span class="label-text">Tulis pertanyaan Anda seputar produk:</span>
+              </label>
+              <div class="assistant-input-row">
+                <input 
+                  type="text" 
+                  id="assistant-input" 
+                  class="form-input" 
+                  placeholder="Ketik pertanyaan Anda di sini... (Contoh: Ada charger 30W?)" 
+                  autocomplete="off"
+                  required>
+                <button type="submit" id="assistant-submit-btn" class="btn btn-primary">
+                  <span>Tanyakan</span>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Area Jawaban Asisten (Live Region) -->
+          <div class="assistant-log-header">
+            <span class="log-title">Jawaban Asisten:</span>
+            <button type="button" id="assistant-clear-btn" class="btn btn-text-danger" aria-label="Bersihkan riwayat percakapan asisten">
+              Bersihkan
+            </button>
+          </div>
+          <div id="assistant-output" class="assistant-output" role="log" aria-live="polite" aria-label="Riwayat jawaban Asisten Toko">
+            <div class="assistant-message assistant-welcome">
+              <p><strong>Halo! Saya Asisten Toko Subhan Gadget Store.</strong></p>
+              <p>Silakan tanyakan produk yang Anda cari, bandingkan harga, atau klik salah satu tombol contoh pertanyaan di atas. Saya siap memberikan rincian produk yang tersedia di katalog!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Halaman -->
+  <footer id="kontak-toko" class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-column brand-col">
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">📱</span>
+          <span class="footer-brand-name">Subhan Gadget Store</span>
+        </div>
+        <p class="footer-desc">
+          Toko online aksesori handphone dan gadget terpercaya. Menyediakan solusi perlindungan, audio, dan pengisian daya berkualitas dengan harga bersahabat.
+        </p>
+        <p class="footer-disclaimer">
+          <strong>Pemberitahuan:</strong> Seluruh harga, ketersediaan stok, dan varian model HP perlu dikonfirmasi kepada admin sebelum transaksi final dilakukan.
+        </p>
+      </div>
+
+      <div class="footer-column categories-col">
+        <h2 class="footer-heading">Kategori Produk</h2>
+        <ul class="footer-list">
+          <li><a href="#katalog" class="footer-category-link" data-category="Headset Kabel">Headset Kabel &amp; Type-C</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="TWS">TWS &amp; Earbud Bluetooth</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Softcase">Softcase &amp; Silikon Macaron</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Hardcase">Hardcase &amp; MagSafe</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Pelindung Layar">Tempered Glass &amp; Hydrogel</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Charger">Charger Standar &amp; GaN 30W</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Kabel Data">Kabel Data Type-C 100W</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Powerbank">Powerbank 10.000mAh</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Holder HP">Holder &amp; Stand HP Meja</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Adaptor">Adaptor OTG</a></li>
+          <li><a href="#katalog" class="footer-category-link" data-category="Aksesori HP">Phone Grip &amp; PopSocket</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-col">
+        <h2 class="footer-heading">Pemesanan &amp; Bantuan</h2>
+        <p class="footer-text">
+          Pemesanan diproses langsung melalui WhatsApp Click-to-Chat resmi toko:
+        </p>
+        <div class="footer-wa-action">
+          <button type="button" id="footer-wa-btn" class="btn btn-whatsapp btn-full" aria-label="Hubungi Pemilik Toko via WhatsApp">
+            <span class="wa-icon" aria-hidden="true">💬</span>
+            <span>Hubungi via WhatsApp</span>
+          </button>
+        </div>
+        <p class="footer-note">
+          <small>Jam operasional: Setiap hari 09:00 - 21:00 WIB.</small>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">&copy; 2026 Subhan Gadget Store. Seluruh hak cipta dilindungi.</p>
+        <p class="a11y-badge">Dioptimalkan untuk Aksesibilitas Screen Reader (NVDA &amp; JAWS) serta Navigasi Keyboard.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog: Detail Produk (Aksesibel WCAG 2.1 AA) -->
+  <div 
+    id="product-modal" 
+    class="modal-backdrop" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modal-product-title" 
+    aria-describedby="modal-product-description"
+    hidden>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- Header Modal -->
+        <div class="modal-header">
+          <h2 id="modal-product-title" class="modal-title">Nama Produk</h2>
+          <button type="button" id="modal-close-btn" class="modal-close-btn" aria-label="Tutup dialog detail produk">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Body Modal -->
+        <div class="modal-body">
+          <div class="modal-media">
+            <img id="modal-product-image" src="images/headset-c17.svg" alt="Ilustrasi produk" class="modal-image">
+            <span id="modal-product-category" class="badge category-badge">Kategori</span>
+          </div>
+          
+          <div class="modal-details">
+            <div class="modal-price-wrap">
+              <span class="price-label">Harga Produk:</span>
+              <span id="modal-product-price" class="modal-price">Rp0</span>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section-title">Deskripsi Lengkap</h3>
+              <p id="modal-product-description" class="modal-text"></p>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section-title">Informasi Kompatibilitas</h3>
+              <div class="compatibility-box">
+                <span class="compat-icon" aria-hidden="true">⚠️</span>
+                <p id="modal-product-compatibility" class="compat-text"></p>
+              </div>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section-title">Spesifikasi Teknis</h3>
+              <p id="modal-product-specs" class="specs-text"></p>
+            </div>
+
+            <div class="order-notice-box">
+              <p class="order-notice-title">💡 Petunjuk Pemesanan:</p>
+              <p class="order-notice-text">
+                Menekan tombol pemesanan akan menyiapkan format pesan WhatsApp otomatis. Anda dapat memeriksa pesan tersebut dan menekan tombol kirim di aplikasi WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="modal-footer">
+          <button type="button" id="modal-order-btn" class="btn btn-whatsapp btn-large">
+            <span class="wa-icon" aria-hidden="true">💬</span>
+            <span id="modal-order-text">Pesan Produk Ini via WhatsApp</span>
+          </button>
+          <button type="button" id="modal-cancel-btn" class="btn btn-secondary">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dialog: Peringatan Konfigurasi WhatsApp / Pesan Khusus -->
+  <div 
+    id="wa-config-modal" 
+    class="modal-backdrop" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="wa-modal-title" 
+    hidden>
+    <div class="modal-dialog modal-dialog-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="wa-modal-title" class="modal-title">Pengaturan Nomor WhatsApp Toko</h2>
+          <button type="button" id="wa-config-close-btn" class="modal-close-btn" aria-label="Tutup pemberitahuan konfigurasi WhatsApp">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="config-alert-box">
+            <span class="alert-icon" aria-hidden="true">📢</span>
+            <div class="alert-content">
+              <p><strong>Nomor WhatsApp Toko Belum Dikonfigurasi</strong></p>
+              <p id="wa-config-modal-msg">
+                Sistem mendeteksi bahwa nomor WhatsApp toko masih menggunakan nomor contoh (placeholder) <code>WHATSAPP_NUMBER = "628xxxxxxxxxx"</code>.
+              </p>
+            </div>
+          </div>
+          <p class="config-instructions">
+            Untuk mengaktifkan pemesanan langsung:
+          </p>
+          <ol class="config-steps">
+            <li>Buka file <code>script.js</code> di folder proyek.</li>
+            <li>Cari baris: <code>const WHATSAPP_NUMBER = "628xxxxxxxxxx";</code></li>
+            <li>Ganti nilai tersebut dengan nomor WhatsApp toko aktif dalam format internasional (tanpa tanda <code>+</code>, spasi, atau tanda hubung, contoh: <code>6281234567890</code>).</li>
+            <li>Simpan berkas dan muat ulang halaman website.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="wa-config-ok-btn" class="btn btn-primary">
+            Saya Mengerti
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Aplikasi -->
+  <script src="script.js"></script>
+</body>
+</html>

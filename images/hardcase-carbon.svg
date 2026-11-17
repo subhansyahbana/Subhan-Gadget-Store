@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="iPaky Carbon Fiber">
+  <defs>
+    <linearGradient id="bg-hardcase-carbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-hardcase-carbon" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-hardcase-carbon)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-hardcase-carbon)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="145" y="65" width="110" height="175" rx="20" fill="#1e293b" stroke="#475569" stroke-width="4"/>
+            <path d="M155 85 L245 85 M155 105 L245 105 M155 125 L245 125 M155 145 L245 145 M155 165 L245 165 M155 185 L245 185 M155 205 L245 205" stroke="#334155" stroke-width="2"/>
+            <rect x="160" y="75" width="36" height="45" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="2"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">iPaky Carbon Fiber</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Shockproof Carbon Texture</text>
+</svg>

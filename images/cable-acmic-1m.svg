@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="ACMIC Kabel USB-C 1M">
+  <defs>
+    <linearGradient id="bg-cable-acmic-1m" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-cable-acmic-1m" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-cable-acmic-1m)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-cable-acmic-1m)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <circle cx="200" cy="150" r="50" fill="none" stroke="#334155" stroke-width="8"/>
+            <circle cx="200" cy="150" r="36" fill="none" stroke="#64748b" stroke-width="6"/>
+            <rect x="130" y="140" width="28" height="16" rx="4" fill="#0f172a"/>
+            <rect x="242" y="140" width="28" height="16" rx="4" fill="#0f172a"/>
+            <rect x="122" y="144" width="8" height="8" rx="2" fill="#94a3b8"/>
+            <rect x="270" y="144" width="8" height="8" rx="2" fill="#94a3b8"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">ACMIC Kabel USB-C 1M</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Fast Sync & Charge Cable</text>
+</svg>

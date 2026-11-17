@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Tempered Glass HD Clear">
+  <defs>
+    <linearGradient id="bg-screen-tg-clear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-screen-tg-clear" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-screen-tg-clear)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-screen-tg-clear)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="145" y="65" width="110" height="175" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+            <path d="M160 85 L210 85" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+            <polygon points="225,95 240,110 235,130 220,115" fill="#bae6fd" opacity="0.7"/>
+            <path d="M155 220 L245 130" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Tempered Glass HD Clear</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">9H Hardness Crystal Glass</text>
+</svg>

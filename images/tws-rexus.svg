@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Rexus FX99 TWS">
+  <defs>
+    <linearGradient id="bg-tws-rexus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-tws-rexus" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-tws-rexus)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-tws-rexus)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="135" y="115" width="130" height="95" rx="22" fill="#1c1917" stroke="#dc2626" stroke-width="4"/>
+            <polygon points="190,140 210,140 200,160" fill="#ef4444"/>
+            <rect x="150" y="80" width="24" height="45" rx="10" fill="#292524" stroke="#ef4444" stroke-width="2"/>
+            <circle cx="162" cy="75" r="13" fill="#dc2626"/>
+            <rect x="226" y="80" width="24" height="45" rx="10" fill="#292524" stroke="#ef4444" stroke-width="2"/>
+            <circle cx="238" cy="75" r="13" fill="#dc2626"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Rexus FX99 TWS</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Gaming & Music Bluetooth TWS</text>
+</svg>

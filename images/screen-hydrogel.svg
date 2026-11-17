@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Hydrogel Screen Film">
+  <defs>
+    <linearGradient id="bg-screen-hydrogel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow-screen-hydrogel" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.12" flood-color="#0f172a"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-screen-hydrogel)"/>
+  <rect x="30" y="20" width="340" height="260" rx="16" fill="#ffffff" filter="url(#shadow-screen-hydrogel)"/>
+  
+  <g transform="translate(0, -10)">
+    
+            <rect x="145" y="65" width="110" height="175" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="4"/>
+            <path d="M160 100 Q200 130 240 100" stroke="#34d399" stroke-width="3" fill="none"/>
+            <path d="M160 140 Q200 170 240 140" stroke="#34d399" stroke-width="3" fill="none"/>
+            <circle cx="200" cy="190" r="10" fill="#059669"/>
+        
+  </g>
+  
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Hydrogel Screen Film</text>
+  <text x="200" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Self-Healing Flexible Film</text>
+</svg>
